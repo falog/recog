@@ -1,0 +1,24 @@
+{
+  "name": "recog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falog/recog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/falog/recog/issues"
+  },
+  "homepage": "https://github.com/falog/recog#readme",
+  "devDependencies": {
+    "wrangler": "^4.67.0"
+  }
+}

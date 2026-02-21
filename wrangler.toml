@@ -1,0 +1,6 @@
+name = "falkoe-whisper"
+main = "src/index.js"
+compatibility_date = "2026-02-21"
+
+[ai]
+binding = "AI"
