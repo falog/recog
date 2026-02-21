@@ -1,4 +1,4 @@
-name = "falkoe-whisper"
+name = "falkoe"
 main = "src/index.js"
 compatibility_date = "2026-02-21"
 
