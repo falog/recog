@@ -17,14 +17,18 @@ export default {
 
     const inputs = {
       audio: [...new Uint8Array(buf)],
-      ...(lang && lang !== "auto" ? { language: lang } : {}),
+      task: "transcribe",
+      language: lang ?? undefined,
+      word_timestamps: true
     };
 
     const r = await env.AI.run("@cf/openai/whisper", inputs);
 
     return Response.json({
       text: r?.text ?? "",
-      detected_language: r?.language ?? null,
+      segments: r?.segments ?? null,
+      words: r?.words ?? null,
+      raw: r
     });
   },
 };
