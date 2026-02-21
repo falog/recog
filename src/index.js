@@ -25,9 +25,9 @@ export default {
     const r = await env.AI.run("@cf/openai/whisper", inputs);
 
     return Response.json({
-      text: r?.text ?? "",
-      segments: r?.segments ?? null,
-      words: r?.words ?? null,
+      //text: r?.text ?? "",
+      //segments: r?.segments ?? null,
+      //words: r?.words ?? null,
       raw: r
     });
   },
