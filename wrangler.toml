@@ -7,7 +7,6 @@ binding = "AI"
 
 [vars]
 MONTHLY_TOTAL_BYTES_LIMIT = 188743680
-
 MAX_PER_REQUEST_BYTES = 2097152
 
 [durable_objects]
@@ -17,4 +16,4 @@ bindings = [
 
 [[migrations]]
 tag = "v1"
-new_classes = ["GlobalQuota"]
+new_sqlite_classes = ["GlobalQuota"]
