@@ -4,3 +4,17 @@ compatibility_date = "2026-02-21"
 
 [ai]
 binding = "AI"
+
+[vars]
+MONTHLY_TOTAL_BYTES_LIMIT = 188743680
+
+MAX_PER_REQUEST_BYTES = 2097152
+
+[durable_objects]
+bindings = [
+  { name = "GLOBAL_QUOTA", class_name = "GlobalQuota" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["GlobalQuota"]
